@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Default values (prices) for movie tickets
 childTicket=7
 teenTicket=12
 adultTicket=20
@@ -21,9 +22,13 @@ echo "How many adults will be attending?"
 
 read adult
 
+# Calculates total sum
 sum=$(( (child * childTicket) + (teen * teenTicket) + (adult * adultTicket) ))
+
+# Calculates remaining amount
 remaining=$(( money - sum ))
 
+# If statement to determine if user has enough money
 if [ $sum -le $money ]; then
 	if [ $remaining -ge 0 ]; then
 		echo "You have enough money to see the movie and you have $remaining left over for snacks!"
