@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Newcomer MeetUp</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo.png" alt="Fast Sloth logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="fastsloth-text-box">
+                <h1>Newcomer MeetUp</h1>
+            </div>
+        </header>
+
+        <section class="section-features">
+            <div class="row">
+                <form name="myForm" method="get" onsubmit="return eventhandler()">
+                <h2>Events in your area</h2>
+                <p class="long-copy">
+                Sign up for events in your area and in your language!</p>
+                <br>
+                <form action>
+                <label>Create an event</label>
+                <br>
+                <select>
+                    <option value="sport">Sport or Activity</option>
+                    <option value="meetup">Meet-up or Social Event</option>
+                    <option value="language exchange">Language Exchange</option>
+                    <option value="volunteer">Volunteering event</option>
+                </select>
+                <br>
+                <br>
+                <label>Meeting Date</label>
+                <br>
+                <input type="date" id="eventdate"/>
+                <br>
+                <br>
+                <label>Location</label>
+                <p style="font-size: 11px;">(Place a pin at the relevant location or enter it manually)</p>
+                <br>
+                <br>
+                <label>Event info (500 characters max)</label>
+                <br>
+                <input type="text" id="eventinfo" maxlength="500" style="height:200px;">
+                <br>
+                <br>
+                <input type="submit" value="Submit" id="submitbtn">
+                </form>
+                <br>
+                <p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Mok, Joey, Sean, Stanley, Dhrumil @ Hack the Barriers.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
