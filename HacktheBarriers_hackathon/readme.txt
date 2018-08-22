@@ -1,4 +1,4 @@
-# Hack the Barriers - Newcomer MeetUp readme
+Hack the Barriers - Newcomer MeetUp readme
 
 This is a website created for the Hack the Barriers hackathon on August 20th, 2018. The theme of the hackathon was things that could help
 young newcomers to Canada, be they immigrants or refugees. We decided to create a Meetup-style website where youth can create events and 
